@@ -27,8 +27,8 @@ void letra_x(int x, int y, char quadro[LINHAS][COLUNAS]) {
 
 // Função para gerar posições aleatórias para as figuras
 void gerar_posicao_aleatoria(int *x, int *y) {
-    *y = rand() % (COLUNAS - 2) + 1; // Garante que as figuras estejam dentro do quadro, adiciona 1 para garantir que o resultado nao sera 0
-    *x = rand() % (LINHAS - 2) + 1; //Linhas - 2 e colunas - 2 é para garantir que não fique na borda do quadro
+    *y = rand() % (COLUNAS - 2) + 1; // Garante que as figuras estejam dentro do quadro, começa no 1 e termina no 78
+    *x = rand() % (LINHAS - 2) + 1; // Linhas - 2 e colunas - 2 é para garantir que não fique na borda do quadro
 }
 
 // Função para verificar se a posição está livre (para figuras de 3x3, ou 1x1 no caso do asterisco)
