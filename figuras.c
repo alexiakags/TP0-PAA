@@ -122,7 +122,7 @@ void desenhar_raposa(char quadro[LINHAS][COLUNAS], int num_raposas) {
 
             // Verifica os espaços onde a raposa será desenhada
             for (int dx = 0; dx < 4; dx++) { // Altura da raposa (4 linhas)
-                for (int dy = 0; dy < 7; dy++) { // Largura da raposa (6 colunas)
+                for (int dy = 0; dy < 7; dy++) { // Largura da raposa (7 colunas)
                     if (quadro[x + dx][y + dy] != ' ') {
                         espaco_livre = 0; // Alguma parte já está ocupada
                         break;
