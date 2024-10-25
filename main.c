@@ -43,6 +43,11 @@ void menu() {
 // Função principal
 int main() {
     srand(time(NULL)); // Inicializa o gerador de números aleatórios
-    menu();
+    int x = 1;
+    do{
+        menu();
+        printf("Digite 0 para sair.\n");
+        scanf("%d", &x);
+    }while(x!=0);
     return 0;
 }
